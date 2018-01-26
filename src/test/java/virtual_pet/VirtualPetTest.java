@@ -61,6 +61,7 @@ public class VirtualPetTest {
 		int result = underTest.getThirst();
 		Assert.assertEquals(2, result);
 	}
+
 	@Test
 	public void tickShouldChangeBoredomBy1() {
 		VirtualPet underTest = new VirtualPet();
@@ -68,6 +69,7 @@ public class VirtualPetTest {
 		int result = underTest.getBoredom();
 		Assert.assertEquals(2, result);
 	}
+
 	@Test
 	public void tickShouldChangeTirednessBy1() {
 		VirtualPet underTest = new VirtualPet();
@@ -75,4 +77,35 @@ public class VirtualPetTest {
 		int result = underTest.getTiredness();
 		Assert.assertEquals(2, result);
 	}
+
+	@Test
+	public void feedPetShouldReduceHungerBy20() {
+		VirtualPet underTest = new VirtualPet();
+		underTest.feedPet();
+		int result = underTest.getHunger();
+		Assert.assertEquals(-19, result);
+	}
+
+	@Test
+	public void waterPetShouldReduceThirstBy20() {
+		VirtualPet underTest = new VirtualPet();
+		underTest.waterPet();
+		int result = underTest.getThirst();
+		Assert.assertEquals(-19, result);
+	}
+	@Test
+	public void playWithPetShouldReduceBoredomBy20() {
+		VirtualPet underTest = new VirtualPet();
+		underTest.playWithPet();
+		int result = underTest.getBoredom();
+		Assert.assertEquals(-19, result);
+	}
+	@Test
+	public void petNapTimeShouldReduceTirednessBy20() {
+		VirtualPet underTest = new VirtualPet();
+		underTest.petNapTime();
+		int result = underTest.getTiredness();
+		Assert.assertEquals(-19, result);
+	}
+	
 }

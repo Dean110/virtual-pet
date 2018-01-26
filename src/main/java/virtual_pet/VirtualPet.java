@@ -38,12 +38,27 @@ public class VirtualPet {
 		this.petName = petName;
 
 	}
+//Class behavior methods
 	public void tick() {
 	this.petHunger++;
 	this.petThirst++;
 	this.petBoredom++;
 	this.petTiredness++;
 	}
+	public void feedPet() {
+		this.petHunger -= 20;
+		
+	}
+	public void waterPet() {
+		this.petThirst -= 20;
+	}
+	public void playWithPet() {
+		this.petBoredom -= 20;
+	}
+	public void petNapTime() {
+		this.petTiredness -=20;
+	}
+	
 
 
 }
