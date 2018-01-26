@@ -45,7 +45,7 @@ public class VirtualPet {
 
 	// Class behavior methods
 	public void tick() {
-		this.petHunger++;
+		 this.petHunger++;
 		this.petThirst++;
 		this.petBoredom++;
 		this.petTiredness++;
