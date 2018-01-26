@@ -93,6 +93,7 @@ public class VirtualPetTest {
 		int result = underTest.getThirst();
 		Assert.assertEquals(-19, result);
 	}
+
 	@Test
 	public void playWithPetShouldReduceBoredomBy20() {
 		VirtualPet underTest = new VirtualPet();
@@ -100,6 +101,7 @@ public class VirtualPetTest {
 		int result = underTest.getBoredom();
 		Assert.assertEquals(-19, result);
 	}
+
 	@Test
 	public void petNapTimeShouldReduceTirednessBy20() {
 		VirtualPet underTest = new VirtualPet();
@@ -107,5 +109,11 @@ public class VirtualPetTest {
 		int result = underTest.getTiredness();
 		Assert.assertEquals(-19, result);
 	}
-	
+
+	@Test
+	public void displayStatusShouldOutputStatus() {
+		VirtualPet underTest = new VirtualPet();
+		String result = underTest.displayStatus();
+		Assert.assertEquals("Bruce\nHunger: 1\nThirst: 1\nBoredom: 1\nTiredness: 1", result);
+	}
 }
