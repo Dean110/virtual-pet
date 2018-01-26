@@ -1,20 +1,35 @@
-Virtual Pet
-Create a virtual pet. Bonus points if it becomes a fad!
+       _      _               _     ___     _   
+ /\   /(_)_ __| |_ _   _  __ _| |   / _ \___| |_ 
+ \ \ / / | '__| __| | | |/ _` | |  / /_)/ _ \ __|
+  \ V /| | |  | |_| |_| | (_| | | / ___/  __/ |_ 
+   \_/ |_|_|   \__|\__,_|\__,_|_| \/    \___|\__|
+                                                 
+  _          __      _____ ___ ___   ___         _         _       _        
+ | |__ _  _  \ \    / / __/ __|_ _| |_ _|_ _  __| |_  _ __| |_ _ _(_)___ ___
+ | '_ \ || |  \ \/\/ / (_| (__ | |   | || ' \/ _` | || (_-<  _| '_| / -_|_-<
+ |_.__/\_, |   \_/\_/ \___\___|___| |___|_||_\__,_|\_,_/__/\__|_| |_\___/__/
+       |__/                                                                 
+
+Weekend Assignment for WeCanCodeIT, an accelerated educational experince provider.  This is our second week project focusing on class design and incorporating TDD into the development of the app.
+
+Project Requirements
 
 Setup
-In Git Bash mkdir virtual-pet.
-cd into the virtual-pet directory
-copy and paste curl https://raw.githubusercontent.com/WeCanCodeIT/gradle-scripts/master/basic-junit/build.gradle --output build.gradle
-type ls to make sure that you see a build.gradle inside of virtual-pet
-type gradle eclipse to finish set up of your project in bash
-in Eclipse, import existing project into workspace
-Create a README.md file in your project folder to describe what you’ve done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you’d like to learn more about Markdown formatting, check out the Github Markdown Guide.)
-Create a GitHub repository also named virtual-pet and set it up so that you can push your code there from your Eclipse project. Do this now. It’s the least fun part, so just get it out of the way.
+[ * ] In Git Bash mkdir virtual-pet.
+[ * ] cd into the virtual-pet directory
+[ * ] copy and paste curl https://raw.githubusercontent.com/WeCanCodeIT/gradle-scripts/master/basic-junit/build.gradle --output build.gradle
+[ * ] type ls to make sure that you see a build.gradle inside of virtual-pet
+[ * ] type gradle eclipse to finish set up of your project in bash
+[ * ] in Eclipse, import existing project into workspace
+[ * ] Create a README.md file in your project folder to describe what you’ve done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you’d like to learn more about Markdown formatting, check out the Github Markdown Guide.)
+[ * ] Create a GitHub repository also named virtual-pet and set it up so that you can push your code there from your Eclipse project. Do this now. It’s the least fun part, so just get it out of the way.
+
 Classes
-create a VirtualPet class.
-create a VirtualPetApp class with a main method.
-Stretch goal create a VirtualPetTest class to build out unit tests on the behaviors placed in VirtualPet
-You should house your project in a properly named package…something other than the default package
+[ ] create a VirtualPet class.
+[ ] create a VirtualPetApp class with a main method.
+[ ] Stretch goal create a VirtualPetTest class to build out unit tests on the behaviors placed in VirtualPet
+[ ] You should house your project in a properly named package…something other than the default package
+
 Details
 Create a virtual pet application. This is your version of a Tamagotchi or DigiPet! This might seem like a daunting task, but we can break it down.
 
@@ -27,11 +42,12 @@ There is always some confusion with this tick() method. It has some flexibility,
 Ideas
 Attributes (instance variables) that a virtual pet might have, along with some ideas for activities (methods) that might address them are:
 
-hunger (feed it)
-thirst (water it)
-waste (let it out to the bathroom)
-boredom (play with it)
-sickness (take it to the doctor)
+[ ] hunger (feed it)
+[ ] thirst (water it)
+[ ] waste (let it out to the bathroom)
+[ ] boredom (play with it)
+[ ] sickness (take it to the doctor)
+
 Your methods should cause the appropriate instance variables to update - for instance, if you have a feed() method, it might make hunger go down, but make thirst go up.
 
 Attributes that might update when tick() is called:
@@ -64,15 +80,16 @@ What do you want to do?
 
 You feed Horace.
 Required Tasks
-VirtualPet class
-Create a tick() method that represents the passage of time.
-Create at least three instance variables (aka attributes aka properties aka fields).
-Create at least three methods (messages you send to your pet).
-VirtualPetApp class
-Create a main method that…
-implements a game loop.
-asks for user input.
-writes output to the console.
+[ ] VirtualPet class
+	[ * ] Create a tick() method that represents the passage of time.
+	[ * ] Create at least three instance variables (aka attributes aka properties aka fields).
+	[ ] Create at least three methods (messages you send to your pet).
+[ ] VirtualPetApp class
+	[ ] Create a main method that…
+		[ ] implements a game loop.
+		[ ] asks for user input.
+		[ ] writes output to the console.
+
 Grading
 Here is the rubric.
 
