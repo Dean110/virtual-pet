@@ -116,4 +116,31 @@ public class VirtualPetTest {
 		String result = underTest.displayStatus();
 		Assert.assertEquals("Bruce\nHunger: 1\nThirst: 1\nBoredom: 1\nTiredness: 1", result);
 	}
+
+	@Test
+	public void isAliveDefaultsToTrue() {
+		VirtualPet underTest = new VirtualPet();
+		boolean result = underTest.getPetIsAlive();
+		Assert.assertTrue(result);
+	}
+	@Test
+	public void isAliveChangesToFalseIfHungerIsGreaterThan100() {
+		VirtualPet underTest = new VirtualPet();
+		for (int i = 0; i <102; i++) {
+			underTest.tick();
+			}
+		boolean result = underTest.getPetIsAlive();
+		Assert.assertFalse(result);
+		}
+	@Test
+	public void isAliveChangesToFalseIfThirstIsGreaterThan100() {
+		VirtualPet underTest = new VirtualPet();
+		underTest.feedPet();
+		for (int i = 0; i <102; i++) {
+			underTest.tick();
+			}
+		boolean result = underTest.getPetIsAlive();
+		Assert.assertFalse(result);
+	}
 }
+
